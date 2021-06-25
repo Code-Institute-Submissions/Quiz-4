@@ -1,3 +1,47 @@
-body {
-    background: blue;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap');
+
+:root {
+
+    background: rgb(41, 39, 39);
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+
+h1 h2 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom 2rem;
+}
+
+h2 {
+
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+
+}
+
+
+
+
+.quiz-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
 }
