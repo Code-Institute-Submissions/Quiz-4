@@ -13,108 +13,66 @@
 
 
 
-    <div>
-        <h1>General Knowledge Quiz of the Decade</h1>
-    </div>
+    <div id="games-container">
+        <header>
+            <h1>General Knowledge Quiz of the Decade</h1>
 
-    <div>
-        <h2>Computers</h2>
-    </div>
+            <p><Strong>Computers</Strong></p>
+        </header>
 
+        <section>
+            <div id="results">
+                <p class="score-prefix">
+                    Score </p>
+                <h1 class=" main-score text" id="score">0</h1>
 
-    <div class="games-container">
-        <div class="score-item">
-            <p class="score-prefix">
-                Score </p>
-
-            <h1 class=" main-score text" id="score">0</h1>
-
-        </div>
-
-        <div id="game">
-        </div>
-        <div class="questions-row">
-            <div class="col 12">
-                <h1 id="question">Do you know the answer to this question?</h1>
             </div>
 
-        </div>
 
-        <div class="row">
-            <div class="col 12">
-                <div class="ans-container card">
-                    <p class="ans-prefix">A</p>
-                    <p class="ans-text" data- answer="a">Answer A</p>
+
+            <form id="quiz" name="quiz">
+                <h2> 1. What does HTML stand for?</h2>
+
+                <input type="radio" id="q1a" name="q1" value="a">a<br>
+                <input type="radio" id="q1b" name="q1" value="b">b<br>
+                <input type="radio" id="q1c" name="q1" value="c">c.<br>
+                <input type="radio" id="q1d" name="q1" value="d">d<br>
+
+                <h2>2. What does CSS stand for?</h2>
+
+                <input type="radio" id="q2a" name="q2" value="a">a<br>
+                <input type="radio" id="q2b" name="q2" value="b">b<br>
+                <input type="radio" id="q2c" name="q2" value="c">c.<br>
+                <input type="radio" id="q2d" name="q2" value="d">d<br>
+
+                <h2>3. What does JS stand for?</h2>
+
+                <input type="radio" id="q3a" name="q3" value="a">a<br>
+                <input type="radio" id="q3b" name="q3" value="b">b<br>
+                <input type="radio" id="q3c" name="q3" value="c">c.<br>
+                <input type="radio" id="q3d" name="q3" value="d">d<br>
+
+                <h2>4. What is Python?</h2>
+
+                <input type="radio" id="q4a" name="q4" value="a">a<br>
+                <input type="radio" id="q4b" name="q4" value="b">b<br>
+                <input type="radio" id="q4c" name="q4" value="c">c.<br>
+                <input type="radio" id="q4d" name="q4" value="d">d<br>
+
+
+
+
+
+
+                <br><br>
+                <input id="button" type="button" value="Submit Answers" onclick="check();">
+                <br><br>
+
+                <!--  
+
+                <div id="button">
+
+                    <a href="questions.html"><button class="button">Next</button></a>
+
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col 12">
-                <div class="ans-container card">
-                    <p class="ans-prefix">B</p>
-                    <p class="ans-text" data- answer="b">Answer B</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col 12">
-                <div class="ans-container card">
-                    <p class="ans-prefix">C</p>
-                    <p class="ans-text" data- answer="c">Answer C</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col 12">
-                <div class="ans-container card">
-                    <p class="ans-prefix">D</p>
-                    <p class="ans-text" data- answer="d">Answer D</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="buttons">
-            <button class="button" class="next">Next</button>
-        </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- <a href="quiz.html"><button class="scores-counter">Score</button></a>
-       </div>
-
-       -->
-
-
-
-
-
-
-
-
-    <script src="assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-
-
-    <footer>
-        <h2>An Alan Stephenson production</h2>
-    </footer>
-
-
-</body>
-
-
-</html>
+                -->

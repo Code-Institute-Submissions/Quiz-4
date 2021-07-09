@@ -1,57 +1,50 @@
-// Questions compliment of W3 schools
+const myForm = document.getElementById("techquiz");
+const answers = ['b', 'a', 'c', 'b'];
+let total = 0;
+let answeredArray = [];
+let totalDisplay = document.getElementById("score");
+let resultBox = document.getElementById("result");
+
+myForm.addEventListener('submit', function (event) {
+    total = 0;
+    event.preventDefault();
+    checkAnswers();
+})
 
 
-let questionChoice = [
+function checkAnswers() {
 
-    {
-        question: 'What does HTML stand for?',
+    let userAnswers = document.querySelectorAll("input[type=radio]: checked");
 
+    for (var i = 0; i < userAnswers.length; i++) {
+        if (userAnswers[i].value == answers[i]) {
+            //push the wrong id into answered Array
 
-
-        option: ['Home Tool Markup Language', 'Hyper Text Markup Language', 'Hyper Text Modified Language', 'Hyper Test Markup Language', ],
-
-        answer: 'Hyper Text Markup Language'
-
-    },
-
-
-    {
-        question: 'What does CSS stand for?',
-
-        option: ['Cascading Style Sheets', 'Computer Style Sheets', 'Colorful Style Sheets', 'Creative Style Sheets', ],
-
-        answer: 'Cascading Style Sheets'
-
-    },
-
-
-    {
-        question: 'Waht does JS stand for?',
-
-        option: ['Java School', 'Java Source ', 'Java Script', 'Jason Script', ],
-
-        answer: 'Java Script'
-
-    },
-
-
-    {
-        question: 'What is Python?',
-
-        option: ['A snake', 'A Programming language', 'A reptile', 'A coding language', ],
-
-        answer: 'A Programming language'
-
+            answeredArray.push({
+                id: userAnswers[i].id,
+                answer: 'incorrect'
+            });
+        }
     }
 
+}
 
-]
+displayResult(total, answeredArray);
 
 
-let question = document.getElementById("question");
-let answers = Array.from(document.getElementByClassName('ans-text'));
-let game = document.getElementById("game");
+function displayResult(total, answeredArray) {
 
-let score = document.getElementById("score");
+    totalDisplay.innerHTML = total;
+    resultBox.style.display = "inline";
 
-let next = document.querySelector('.next');
+    for (var x = 0; x < answeredArray.length; x++) {
+        if (answeredArray[x].answer == 'correct') {
+            document.getElementById(answeredArray[x].id).nextElementSibling.classList.add("correct");
+
+        } else if (answeredArray[x].answer == 'incorrect') {
+
+            document.getElementById(answeredArray[x].id).nextElementSibling.classList.add("incorrect");
+        }
+    }
+
+}
