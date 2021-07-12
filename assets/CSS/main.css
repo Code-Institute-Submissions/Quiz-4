@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+
+#tab-wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.tab-content-size {
+    padding: 30px 30px;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+form p {
+    padding-top: 20px;
+}
+
+#result {
+    width: 200px;
+    height: 150px;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    color: orangered;
+    display: none;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+.correct {
+    color: #0EB910;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #D30515;
+    font-weight: bold;
+}
